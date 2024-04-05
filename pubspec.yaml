@@ -12,7 +12,26 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
+  basil:
+    git: https://github.com/tytydraco/basil
+  icons_launcher: ^2.0.5
   very_good_analysis: any
 
 flutter:
   uses-material-design: true
+
+icons_launcher:
+  image_path: 'assets/icon.png'
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+    macos:
+      enable: true
+    windows:
+      enable: true
+    web:
+      enable: true
+    linux:
+      enable: true
