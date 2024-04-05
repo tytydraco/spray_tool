@@ -81,13 +81,17 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       );
 
   Widget _totalCapacityField() => _unsignedDoubleField(
-      'Total liquid capacity (mL)', _totalCapacityController);
+        'Total liquid capacity (mL)',
+        _totalCapacityController,
+      );
 
   Widget _numberOfSpraysField() =>
       _unsignedIntField('Total number of sprays', _numberOfSpraysController);
 
   Widget _desiredDosageField() => _unsignedDoubleField(
-      'Medication dosage per spray (mg)', _mgPerSprayController);
+        'Medication dosage per spray (mg)',
+        _mgPerSprayController,
+      );
 
   Widget _mLPerBatchField() =>
       _unsignedDoubleField('Batch liquid capacity (mL)', _mLPerBatchController);
