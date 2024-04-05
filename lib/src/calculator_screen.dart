@@ -168,7 +168,6 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           constraints: const BoxConstraints(maxWidth: 400),
           child: ListView(
             shrinkWrap: true,
-            padding: const EdgeInsets.all(4),
             children: [
               _titleText(),
               _totalCapacityField(),
