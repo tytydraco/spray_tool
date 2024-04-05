@@ -70,7 +70,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   ) =>
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        child: TextField(
+        child: TextFormField(
           controller: textEditingController,
           decoration: InputDecoration(
             border: const OutlineInputBorder(),
@@ -172,10 +172,16 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             shrinkWrap: true,
             children: [
               _titleText(),
-              _totalCapacityField(),
-              _numberOfSpraysField(),
-              _desiredDosageField(),
-              _mLPerBatchField(),
+              Form(
+                child: Column(
+                  children: [
+                    _totalCapacityField(),
+                    _numberOfSpraysField(),
+                    _desiredDosageField(),
+                    _mLPerBatchField(),
+                  ],
+                ),
+              ),
               const Divider(),
               _mLPerSprayText(),
               _spraysPerMLText(),
