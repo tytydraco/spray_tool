@@ -22,6 +22,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           padding: EdgeInsets.only(bottom: 32),
           child: Text(
             'Spray tool',
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 48,
               fontWeight: FontWeight.bold,
@@ -35,6 +36,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
         child: Center(
           child: Text(
             result.toString(),
+            textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 24,
             ),
